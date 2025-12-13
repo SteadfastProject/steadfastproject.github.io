@@ -1,9 +1,169 @@
-<!DOCTYPE html>  
-<html>  
-  <head>  
-    <title>Production Site</title>  
-  </head>  
-  <body>  
-    <h1>Welcome to the Production Site 🚀</h1>  
-  </body>  
-</html>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My SEO-Friendly Blog Post Title | My Blog Name</title>
+    <meta name="description" content="A brief, keyword-rich summary of the blog post content for search engines.">
+    
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --bg-color: #f8f8f8;
+            --light-grey: #eee;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Container to center content and limit width */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Main Content */
+        main {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Typography */
+        h1 {
+            color: var(--secondary-color);
+            font-size: 2.2em;
+            margin-top: 0;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--light-grey);
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-top: 1px solid var(--light-grey);
+            color: #777;
+        }
+
+        .post-meta {
+            font-size: 0.9em;
+            color: #888;
+            margin-bottom: 20px;
+        }
+        .post-meta a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <span>My Awesome Blog</span>
+            
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="archive.html">Archive</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <article>
+                <h1>How to Build a Lightning-Fast, SEO-Friendly Blog with Only HTML</h1>
+
+                <div class="post-meta">
+                    Published on <time datetime="2025-12-13">December 13, 2025</time> by <a href="#author">Blogger Name</a> in <a href="category-seo.html">SEO</a>.
+                </div>
+
+                <section>
+                    <h2>The Importance of Semantic HTML for SEO</h2>
+                    <p>Semantic HTML5 elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> help search engines (and accessibility tools) understand the structure and hierarchy of your content. This structural clarity is a key factor in technical SEO.</p>
+                </section>
+
+                <section>
+                    <h2>Leveraging Headings for Content Organization</h2>
+                    <p>Proper use of headings (H1, H2, H3, etc.) creates a content outline. The H1 is the main topic, and H2s are the primary subtopics. Ensure your target keywords naturally appear in these headings.</p>
+
+                    <h3>Tips for Writing a Great H1 Tag</h3>
+                    <p>Your H1 should be compelling, accurate, and include your primary keyword. Remember, it should match the main topic of the page.</p>
+
+                    <p>This is a paragraph of the main content. Keep the content clear, readable, and focused on the user's intent to maximize engagement.</p>
+                </section>
+                
+                <aside>
+                    <h3>Related Content</h3>
+                    <ul>
+                        <li><a href="#">The Best Practices for Image SEO</a></li>
+                        <li><a href="#">Why Page Speed Matters</a></li>
+                    </ul>
+                </aside>
+
+            </article>
+
+            <section id="author">
+                <h2>About the Author</h2>
+                <p>A brief bio of the author. Using the <code>&lt;section&gt;</code> tag groups this related information.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; 2025 My Awesome Blog. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
