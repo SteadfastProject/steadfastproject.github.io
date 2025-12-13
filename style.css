@@ -1,144 +1,151 @@
 body {
-  font-family:Verdana,sans-serif;
-  margin:auto;
-  padding:20px;
-  max-width:720px;
-  text-align:left;
-  background-color:#1d1f27;
-  word-wrap:break-word;
-  overflow-wrap:break-word;
-  line-height:1.5;
-  color:#c9d1d9
+    font-family:Verdana,sans-serif;
+    margin:auto;
+    padding:20px;
+    max-width:720px;
+    text-align:left;
+    background-color:#1d1f27;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+    line-height:1.5;
+    color:#c9d1d9
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b {
-  color:#eee
+:is(h1, h2, h3, h4, h5, h6, strong, b) { /* Consolidated headings and bold tags */
+    color:#eee
 }
 a {
-  color:#8cc2dd
+    color:#8cc2dd
 }
 .title {
-  text-decoration:none;
-  border:0
+    text-decoration:none;
+    border:0
 }
 .title b {
-  font-size:24px;
-  margin:19.92px 0;
-  display:block
+    font-size:24px;
+    margin:19.92px 0;
+    display:block
+}
+
+/* Optimized Navigation Styling */
+nav ul {
+    list-style: none; /* Removes bullets */
+    padding: 0;      /* Removes default padding */
+    margin: 0;       /* Removes default margin */
+    display: flex;   /* Lays out list items horizontally */
+    gap: 15px;       /* Modern, efficient way to space out items */
+}
+nav li {
+    /* No properties needed here as 'flex' and 'gap' handle the layout */
 }
 nav a {
-  margin-right:10px
+    /* Removed margin-right: 10px since 'gap' handles spacing */
 }
+
 textarea {
-  background-color:#252525;
-  color:#ddd;
-  width:100%;
-  font-size:16px
+    background-color:#252525;
+    color:#ddd;
+    width:100%;
+    font-size:16px
 }
 input {
-  background-color:#252525;
-  color:#ddd;
-  font-size:16px
+    background-color:#252525;
+    color:#ddd;
+    font-size:16px
 }
 content {
-  line-height:1.6
+    line-height:1.6
 }
 table {
-  width:100%
+    width:100%
 }
 table,
 th,
 td {
-  border:1px solid;
-  border-collapse:collapse;
-  border-color:#c9d1d9;
-  padding:5px
+    border:1px solid;
+    border-collapse:collapse;
+    border-color:#c9d1d9;
+    padding:5px
 }
 img {
-  max-width:100%
+    max-width:100%
 }
 code {
-  padding:2px 5px;
-  color:#f8f8f2;
-  background-color:#282a36
+    padding:2px 5px;
+    color:#f8f8f2;
+    background-color:#282a36
 }
 pre code {
-  display:block;
-  padding:20px;
-  white-space:pre;
-  font-size:14px;
-  overflow-x:auto
+    display:block;
+    padding:20px;
+    white-space:pre;
+    font-size:14px;
+    overflow-x:auto
 }
 blockquote {
-  border-left:1px solid #999;
-  color:#ccc;
-  padding-left:20px;
-  font-style:italic
+    border-left:1px solid #999;
+    color:#ccc;
+    padding-left:20px;
+    font-style:italic
 }
 footer {
-  padding:25px;
-  text-align:center
+    padding:25px;
+    text-align:center
 }
 .helptext {
-  color:#aaa;
-  font-size:small
+    color:#aaa;
+    font-size:small
 }
 .errorlist {
-  color:#eba613;
-  font-size:small
+    color:#eba613;
+    font-size:small
 }
+/* Optimized Blog List Styling */
 ul.blog-posts {
-  list-style-type:none;
-  padding:unset
+    list-style: none; /* Simplified from list-style-type:none */
+    padding: 0;       /* Explicitly set padding to 0 */
 }
 ul.blog-posts li {
-  display:flex;
-  margin-bottom:10px
+    display:flex;
+    margin-bottom:10px
 }
 ul.blog-posts li span {
-  flex:0 0 130px
+    flex:0 0 130px
 }
 ul.blog-posts li a:visited {
-  color:#8b6fcb
+    color:#8b6fcb
 }
 a.blog-tags {
-  line-height:2
+    line-height:2
 }
 h3.blog-filter {
-  margin-bottom:0
+    margin-bottom:0
 }
 .disabled {
-  color:currentColor;
-  cursor:not-allowed;
-  opacity:.7
+    color:currentColor;
+    cursor:not-allowed;
+    opacity:.7
 }
 p.byline {
-  font-style:italic
+    font-style:italic
 }
 .skip-link {
-  position:absolute;
-  top:5;
-  transform:translateY(-600%);
-  transition:transform .5s;
-  background-color:#1d1f27;
-  padding:6px
+    position:absolute;
+    top:5;
+    transform:translateY(-600%);
+    transition:transform .5s;
+    background-color:#1d1f27;
+    padding:6px
 }
 .skip-link:focus {
-  transform:translateY(0%)
+    transform:translateY(0%)
 }
 figure {
-  margin-inline-start:0;
-  margin-inline-end:0
+    margin-inline-start:0;
+    margin-inline-end:0
 }
 figcaption>p {
-  margin-block-start:0;
-  text-align:center;
-  font-style:italic;
-  color:#ccc
+    margin-block-start:0;
+    text-align:center;
+    font-style:italic;
+    color:#ccc
 }
